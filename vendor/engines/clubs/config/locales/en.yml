@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    clubs:
+      title: Clubs
+  admin:
+    clubs:
+      actions:
+        create_new: Add New Club
+        reorder: Reorder Clubs
+        reorder_done: Done Reordering Clubs
+      records:
+        title: Clubs
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Clubs yet. Click "Add New Club" to add your first club.
+      club:
+        view_live_html: View this club live <br/><em>(opens in a new window)</em>
+        edit: Edit this club
+        delete: Remove this club forever
+  clubs:
+    show:
+      other: Other Clubs

@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    clubs:
+      title: Clubs
+  admin:
+    clubs:
+      actions:
+        create_new: Maak een nieuwe Club
+        reorder: Wijzig de volgorde van de Clubs
+        reorder_done: Klaar met het wijzingen van de volgorde van de Clubs
+      records:
+        title: Clubs
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Clubs. Druk op 'Maak een nieuwe Club' om de eerste aan te maken.
+      club:
+        view_live_html: Bekijk deze club op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze club
+        delete: Verwijder deze club voor eeuwig
+  clubs:
+    show:
+      other: Andere Clubs

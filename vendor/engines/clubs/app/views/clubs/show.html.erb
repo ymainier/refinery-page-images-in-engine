@@ -1,0 +1,48 @@
+<% content_for :body_content_title do %>
+  <%= @club.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @club.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @club.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @club.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="clubs">
+      <% @clubs.each do |club| %>
+        <li>
+          <%= link_to club.name, club_path(club) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+<% content_for :body_content_right do %>
+  <ul id='gallery'>
+    <% @club.images.each do |i| %>
+      <li>
+        <%= link_to image_tag(i.thumbnail("200x200#c").url), i.thumbnail("900x600").url %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

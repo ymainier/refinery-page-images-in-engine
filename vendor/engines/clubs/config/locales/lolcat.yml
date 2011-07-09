@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    clubs:
+      title: Clubs
+  admin:
+    clubs:
+      actions:
+        create_new: CREATE NEW Club
+        reorder: REORDR Clubs
+        reorder_done: DUN REORDERIN Clubs
+      records:
+        title: Clubs
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Clubs YET. CLICK "CREATE NEW Club" 2 ADD UR FURST club.
+      club:
+        view_live_html: VIEW DIS club LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS club
+        delete: REMOOV DIS club FOREVR
+  clubs:
+    show:
+      other: OTHR Clubs

@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110709213529) do
+ActiveRecord::Schema.define(:version => 20110709214552) do
+
+  create_table "clubs", :force => true do |t|
+    t.string   "name"
+    t.integer  "logo_id"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clubs", ["id"], :name => "index_clubs_on_id"
 
   create_table "image_page_translations", :force => true do |t|
     t.integer  "image_page_id"

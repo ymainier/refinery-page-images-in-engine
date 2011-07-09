@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    clubs:
+      title: Clubs
+  admin:
+    clubs:
+      actions:
+        create_new: Lag en ny Club
+        reorder: Endre rekkefølgen på Clubs
+        reorder_done: Ferdig å endre rekkefølgen Clubs
+      records:
+        title: Clubs
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Clubs enda. Klikk på "Lag en ny Club" for å legge til din første club.
+      club:
+        view_live_html: Vis hvordan denne club ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne club
+        delete: Fjern denne club permanent
+  clubs:
+    show:
+      other: Andre Clubs

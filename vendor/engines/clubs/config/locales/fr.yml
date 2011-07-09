@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    clubs:
+      title: Clubs
+  admin:
+    clubs:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Club
+        reorder: Réordonner les Clubs
+        reorder_done: Fin de réordonnancement des Clubs
+      records:
+        title: Clubs
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Club. Cliquer sur "Créer un(e) nouve(au/l/lle) Club" pour créer votre premi(er/ère) club.'
+      club:
+        view_live_html: Voir ce(t/tte) club <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) club
+        delete: Supprimer définitivement ce(t/tte) club
+  clubs:
+    show:
+      other: Autres Clubs

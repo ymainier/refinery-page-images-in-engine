@@ -1,4 +1,9 @@
 PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-clubs (1.0)
+
+PATH
   remote: vendor/gems
   specs:
     refinerycms-page-images (1.0.4)
@@ -163,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   mongrel
   refinerycms (~> 1.0.3)
+  refinerycms-clubs (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-page-images (~> 1.0)!
   sqlite3
