@@ -40,6 +40,7 @@ group :development, :test do
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
   # Finally, run 'rake' to run the tests.
   # gem 'refinerycms-testing',    '~> 1.0.1'
+  gem "mongrel"
 end
 
 # END REFINERY CMS ============================================================
@@ -51,7 +52,7 @@ end
 # gem 'refinerycms-inquiries',    '~> 1.0'
 # gem "refinerycms-news",         '~> 1.2'
 # gem 'refinerycms-blog',         '~> 1.6'
-# gem 'refinerycms-page-images',  '~> 1.0'
+gem 'refinerycms-page-images',  '~> 1.0', :path => "vendor/gems"
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'

@@ -1,0 +1,3 @@
+[submodule "vendor/gems/refinerycms-page-images"]
+	path = vendor/gems/refinerycms-page-images
+	url = https://github.com/resolve/refinerycms-page-images.git

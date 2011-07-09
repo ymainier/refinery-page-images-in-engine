@@ -10,7 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110709212745) do
+ActiveRecord::Schema.define(:version => 20110709213529) do
+
+  create_table "image_page_translations", :force => true do |t|
+    t.integer  "image_page_id"
+    t.string   "locale"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "image_page_translations", ["image_page_id"], :name => "index_image_page_translations_on_image_page_id"
+
+  create_table "image_pages", :force => true do |t|
+    t.integer "image_id"
+    t.integer "page_id"
+    t.integer "position"
+    t.text    "caption"
+    t.string  "page_type", :default => "page"
+  end
+
+  add_index "image_pages", ["image_id"], :name => "index_image_pages_on_image_id"
+  add_index "image_pages", ["page_id"], :name => "index_image_pages_on_page_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
